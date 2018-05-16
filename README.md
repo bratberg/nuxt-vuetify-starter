@@ -1,13 +1,13 @@
 # Starter
 
-A [Nuxt.js](https://github.com/nuxt/nuxt.js) + [Vuetify.js](https://github.com/vuetifyjs/vuetify) starter project template without the distraction of a complicated development environment.
+A [Nuxt.js](https://github.com/nuxt/nuxt.js) + [Vuetify.js](https://github.com/vuetifyjs/vuetify) + [Apollo](https://github.com/Akryum/vue-apollo) starter project template without the distraction of a complicated development environment.
 
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init vuetifyjs/nuxt my-project  
+$ vue init myWsq/nuxt-vuetify-apollo my-project  
 $ cd my-project                     
 # install dependencies
 $ npm install # Or yarn install

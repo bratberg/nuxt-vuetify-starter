@@ -11,22 +11,26 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    {{#isWs}}
+    "apollo-link-ws": "^1.0.8",
+    "apollo-utilities": "^1.0.12",
+    "subscriptions-transport-ws": "^0.9.9",
+    {{/isWs}}
     "nuxt": "^1.0.0",
-    "vuetify": "^1.0.0"
+		"vuetify": "^1.0.0",
+		"@nuxtjs/apollo": "^3.0.6",
+		"apollo-cache-inmemory": "^1.2.1",
+		"apollo-client": "^2.3.1",
+		"apollo-link": "^1.2.2",
+		"apollo-link-context": "^1.0.8",
+		"apollo-link-http": "^1.5.4",
+		"graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
     {{#alacarte}}
     "babel-plugin-transform-imports": "^1.4.1",
     {{/alacarte}}
-    "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
   }
