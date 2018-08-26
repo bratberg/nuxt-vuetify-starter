@@ -38,7 +38,6 @@ module.exports = {
       'default': true
     },
     autoInstall: {
-      when: 'isNotTest',
       type: 'list',
       message: 'Should we run `npm install` for you after the project has been created? (recommended)',
       choices: [
@@ -60,7 +59,6 @@ module.exports = {
       ],
     },
   },
-  // completeMessage: '{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{/inPlace}}',
   complete: function(data, { chalk }) {
     const green = chalk.green;
     sortDependencies(data, green);
