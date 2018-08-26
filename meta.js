@@ -16,6 +16,7 @@ module.exports = {
       return options.fn(this)
     }
   },
+
   prompts: {
     name: {
       'type': 'string',
@@ -26,7 +27,7 @@ module.exports = {
       'type': 'string',
       'required': false,
       'message': 'Project description',
-      'default': 'NCViewer Vuetify + Nuxt Template'
+      'default': 'NCViewer\'s Vuetify + Nuxt Template'
     },
     author: {
       'type': 'string',
@@ -34,7 +35,7 @@ module.exports = {
     },
     alacarte: {
       'type': 'confirm',
-      'message': 'Use a-la-carte components?',
+      'message': 'Use a-la-carte components (reduces build size)?',
       'default': true
     },
     autoInstall: {
@@ -42,12 +43,12 @@ module.exports = {
       message: 'Should we run `npm install` for you after the project has been created? (recommended)',
       choices: [
         {
-          name: 'Yes, use NPM',
+          name: 'Yes, use NPM (recommended)',
           value: 'npm',
           short: 'npm',
         },
         {
-          name: 'Yes, use Yarn (not recommended)',
+          name: 'Yes, use Yarn',
           value: 'yarn',
           short: 'yarn',
         },
@@ -59,6 +60,7 @@ module.exports = {
       ],
     },
   },
+
   complete: function(data, { chalk }) {
     const green = chalk.green;
     sortDependencies(data, green);
