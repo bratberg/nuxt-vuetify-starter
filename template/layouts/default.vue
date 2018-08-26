@@ -54,7 +54,7 @@
         <!-- Footer -->
         <v-footer :fixed="fixedFooter" app>
             <v-flex px-3>
-                <span>© {{ new Date().getFullYear() }}</span>
+                <span v-text="`© ${ new Date().getFullYear() }`" />
             </v-flex>
         </v-footer>
 
