@@ -13,6 +13,9 @@ export const mutations = {
     SET_showLeftMenu: set('showLeftMenu'),
     SET_showRightMenu: set('showRightMenu'),
 
+    TOGGLE_showLeftMenu: toggle('showLeftMenu'),
+    TOGGLE_showRightMenu: toggle('showRightMenu'),
+
     TOGGLE_dark: toggle('dark'),
     TOGGLE_miniMenu: toggle('miniMenu'),
     TOGGLE_clipMenu: toggle('clipMenu'),
