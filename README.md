@@ -7,10 +7,13 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) + [Vuetify.js](https://github.com/v
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init vuetifyjs/nuxt my-project  
-$ cd my-project                     
-# install dependencies
-$ npm install # Or yarn install
+$ vue init ncviewer/vuetify-template my-project
+$ cd my-project
+                   
+# run dev server
+$ npm run dev
+# OR
+$ npx nuxt
 ```
 
 > Make sure to use a version of vue-cli >= 2.1 (`vue -V`).
@@ -20,11 +23,11 @@ $ npm install # Or yarn install
 ### Development
 
 ``` bash
-# serve with hot reloading at localhost:3000
+# serve with hot reloading at localhost
 $ npm run dev
 ```
 
-Go to [http://localhost:3000](http://localhost:3000)
+Go to [http://localhost](http://localhost)
 
 ### Production
 

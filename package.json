@@ -1,0 +1,11 @@
+{
+  "name": "vuetify-template",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Nuxt.js + Vuetify.js starter project template.",
+  "scripts": {
+  },
+  "devDependencies": {
+    "vue-cli": "^2.8.1"
+  }
+}

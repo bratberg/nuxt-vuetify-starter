@@ -4,6 +4,12 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": 80
+    }
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -12,21 +18,22 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0",
-    "vuetify": "^1.0.0"
+    "vuetify": "^1.0.0",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     {{#alacarte}}
     "babel-plugin-transform-imports": "^1.4.1",
     {{/alacarte}}
-    "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
+    "eslint": "^4.19.1",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^5.0.0-beta.3",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
   }
