@@ -65,14 +65,15 @@ exports.runLintFix = function runLintFix(cwd, data, color) {
  * Prints the final message with instructions of necessary next steps.
  * @param {Object} data Data from questionnaire.
  */
-exports.printMessage = function printMessage(data, { green, yellow }) {
+exports.printMessage = function printMessage(data, { green, cyan }) {
     const message = `
-# ${green('Project initialization finished!')}
-# ========================
+# ----------------------------------//
+# ${green('Project initialization finished! //')}
+# --------------------------------//
 
 To get started:
 
-  ${yellow(
+  ${cyan(
         `${data.inPlace ? '' : `cd ${data.destDirName}\n  `}${installMsg(
             data
         )}${lintMsg(data)}npm run dev`
