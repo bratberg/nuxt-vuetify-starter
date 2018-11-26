@@ -1,5 +1,4 @@
 {{#alacarte}}
-const nodeExternals = require('webpack-node-externals')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 {{/alacarte}} 
 module.exports = {
@@ -45,15 +44,6 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-      {{#alacarte}}
-      if (process.server) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ]
-      }
-      {{/alacarte}}
     }
   }
 }
